@@ -39,6 +39,7 @@ if [ -z "$(jget wire_tx)" ]; then
   say "Wire: setExecutor / approve / setRecurring"
   jset wire_tx $(send $REACTIVE_RPC $PRIVATE_KEY $RC "setExecutor(address)" $EX)
   jset approve_tx $(send $DEST_RPC $PRIVATE_KEY $TOKEN "approve(address,uint256)" $EX $(cast max-uint))
+  jset gaslimit_tx $(send $REACTIVE_RPC $PRIVATE_KEY $RC "setCallbackGasLimit(uint64)" $CALLBACK_GAS_LIMIT)
   jset recurring_tx $(send $DEST_RPC $PRIVATE_KEY $EX "setRecurring(address,uint256,uint256)" $LANDLORD $RECURRING_AMOUNT $RECURRING_MIN_GAP)
 fi
 

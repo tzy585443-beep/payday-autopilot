@@ -1,1 +1,55 @@
-{}
+{
+  "network": "Reactive Lasna (5318007) + Ethereum Sepolia (11155111)",
+  "faucet_tx_sepolia": "0x44cd524f2ad669d980d179347a1d6f0d28a06df407177674527f93304211be13",
+  "token": "0xC538D3954531F4AA695f27C2981117f146468102",
+  "token_tx": "0xcf90090cd0dea174cc64b6515684f63d11fbe8841123f389f04f2303fcce578e",
+  "reactive": "0xC0ad86d5e599E1FBaF249F9aE44e727e4E37b172",
+  "reactive_tx": "0x16065d64121f65a2c72b859bd0334a95067ad8c91255667351f800dd0f83a0bb",
+  "executor": "0x89Be54A933d3b9e5c6E45365d859f33df5011EdF",
+  "executor_tx": "0x3ee4279c8e16d410b97ba5c7f104014ac2ab5c08ec7f2894b62668597b17c621",
+  "wire_tx": "0x56e1431c589f45c508d0feb9a968446196de31b4f7b03ce5ae319e1c6b8a4474",
+  "approve_tx": "0xbd60e396238a785364b44372b9c1f76365082797605c5eabc47397ed645377bc",
+  "recurring_tx": "0xad4d2652eefffe3c2d5eab9323579e222108d051d6c9afd7c0ab74ba533a5d58",
+  "loops": [
+    {
+      "origin_tx": "0xc69629e091f99527eb114aa1549641c37ac919ff7d0a6b28d2f9ac550a5bd217",
+      "reactive_tx": "0xd6597cdb8a0a5069b2c92b1709954f3d7b4275315b1e5a3b2f15f8e3cb601465",
+      "callback_tx": "0x9ed22231e428d818c17dafdf080d462ccf79704954ede3ef307699b2697ac84b",
+      "at": 1794339999,
+      "result": "CallbackFailure on Sepolia (callback gas limit 500k too low; onIncome needs ~710k there). Fixed via gaslimit_tx."
+    },
+    {
+      "origin_tx": "0x52b626c7ae7a9fe1e63bf7b2b4978205e88951197179f95ab6e410f1403b95aa",
+      "reactive_tx": "0xc10a71d4747ecd55d92058040b85dd48db34c21027374d9062ad885674f73b29",
+      "callback_tx": "0x79aa88548455a653b8aef86c65ba6888eb894455ce8f552959bab86c471143a3",
+      "at": 1794340107,
+      "result": "Saved 600 of 3000 tUSD; latency origin->reactive 12.4s, origin->callback 23.6s"
+    },
+    {
+      "origin_tx": "0xfaeaf5bd24fb9694c6190a4e3e1beb5c5d731a2d15ae522a50e0e0d33da64758",
+      "reactive_tx": "0x91b09676878b191f947ac4f997e794c63d1fb79e96ca64b971a6ab1a24b33fd0",
+      "callback_tx": "0xeaee6420ce17fe0dc7429fd652f2706edc7bb24302e5834a9873a525931be0ac",
+      "at": 1794340167,
+      "result": "Saved 400 of 6000 tUSD (daily cap 1000); latency origin->reactive 12.4s, origin->callback 34.8s"
+    }
+  ],
+  "gaslimit_tx": "0x09b9802d9b480bc6b86734c27e834e09d954336fba6aeed406429ccf177f2192",
+  "failed_attempt_note": "First loop (origin 0xc69629e0..., reactive 0xd6597cdb...) delivered but CallbackFailure on Sepolia: 500k callback gas too low (onIncome uses ~710k on Sepolia). Raised to 1.5M.",
+  "ignored_origin_tx": "0xc7469ec85dfb5a8f5c3807957e850b8959644f221da9cb188053cfaddf776a7a",
+  "ignored_reactive_tx": "0xc640e78c7bbc26d7e82cc4a85848c1b32d3714a14b13b16568a73e73d833bead",
+  "recurring_off_tx": "0x36d8edad17b70286efe417930e522ab1737f792c86be7d99f3fb54be0dc22c1a",
+  "recurring": [
+    {
+      "period": 1,
+      "reactive_tx": "0x1c48c3680b789921b4f92e5f394d1a86d00097016494779287335d6d12119a53",
+      "callback_tx": "0x8a35b997b3eb6f4245662fce4094ef78766184504f634b85c2271c320c46a83a",
+      "result": "CallbackFailure (500k gas limit too low, before fix)"
+    },
+    {
+      "period": 2,
+      "reactive_tx": "0x3f6e8970749c21e73071ad70eb05366ec8f08d95c8ff0ea8410c7e7e53368940",
+      "callback_tx": "0xcd1047ad22eb6aa90751fc0ff2f7526de62841742434e75e130c4f4c6a4ca907",
+      "result": "RecurringPaid 50 tUSD to landlord"
+    }
+  ]
+}

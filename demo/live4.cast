@@ -1,0 +1,7 @@
+{"version": 2, "width": 120, "height": 20, "timestamp": 1794340202}
+[0.004, "o", "\u001b[H\u001b[2J\u001b[3J"]
+[0.004, "o", "$ ./scripts/demo-ignored.sh   # LIVE: untrusted sender is filtered out\r\n"]
+[24.292, "o", "\r\n\u001b[1;36m==> Untrusted address 0x4192546BBEB9E3bCe61aCe2C5369B58dB399dD1d sends 500 tUSD to the wallet\u001b[0m\r\n"]
+[36.183, "o", "origin tx: 0xc7469ec85dfb5a8f5c3807957e850b8959644f221da9cb188053cfaddf776a7a\r\n"]
+[36.901, "o", "reactive tx (Lasna): 0xc640e78c7bbc26d7e82cc4a85848c1b32d3714a14b13b16568a73e73d833bead  -> IncomeIgnored(reason=2 untrusted payer), no callback requested\r\n"]
+[38.501, "o", "ignoredEvents=1\r\n"]
