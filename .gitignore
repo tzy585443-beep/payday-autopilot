@@ -1,0 +1,6 @@
+.secrets
+out/
+cache/
+broadcast/
+demo/*.gif
+demo/frames/

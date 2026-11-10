@@ -1,0 +1,7 @@
+{"version": 2, "width": 110, "height": 30, "timestamp": 1794339490}
+[0.007, "o", "\u001b[H\u001b[2J\u001b[3J"]
+[0.007, "o", "$ forge test\r\n"]
+[0.085, "o", "Compiling 32 files with Solc 0.8.30\r\n"]
+[1.203, "o", "Solc 0.8.30 finished in 1.12s\r\n"]
+[1.223, "o", "Compiler run successful!\r\n"]
+[1.266, "o", "Ran 15 tests for test/Payday.t.sol:PaydayTest\r\n[PASS] testFuzz_savingsNeverExceedsBpsOrCap(uint256) (runs: 256, \u03bc: 588109, ~: 588322)\r\n[PASS] test_anyPayerMode() (gas: 459115)\r\n[PASS] test_callbackAuth() (gas: 63353)\r\n[PASS] test_dailyCap() (gas: 1884460)\r\n[PASS] test_executorRateLimitsRecurring() (gas: 526761)\r\n[PASS] test_fullLoop_paycheckIsSaved() (gas: 652760)\r\n[PASS] test_ignoresDustAndStrangers() (gas: 294662)\r\n[PASS] test_insufficientAllowanceDoesNotRevert() (gas: 541659)\r\n[PASS] test_onlyOwnerControls() (gas: 110584)\r\n[PASS] test_pauseResume() (gas: 627666)\r\n[PASS] test_reactOnlySystem() (gas: 45229)\r\n[PASS] test_recurringViaCron() (gas: 561448)\r\n[PASS] test_replayProtection() (gas: 661644)\r\n[PASS] test_subscriptions() (gas: 54712)\r\n[PASS] test_turningRecurringOffUnsubscribesCron() (gas: 414931)\r\nSuite result: ok. 15 passed; 0 failed; 0 skipped; finished in 12.55ms (16.34ms CPU time)\r\nRan 1 test suite in 13.10ms (12.55ms CPU time): 15 tests passed, 0 failed, 0 skipped (15 total tests)\r\n"]
